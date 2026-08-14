@@ -88,37 +88,91 @@
     "viewService": "View service →",
     "imageBrief": "Wide shot of a real {service} job in progress or finished — favour on-site, in-Paphos photography over stock.",
     "items": {
-      "signs-and-installation": {
-        "title": "Signs & Installation",
-        "summary": "Design, fabrication, assembly and on-site installation of every sign type.",
-        "detail": "From concept sketch to bolted-on reality: illuminated fascias, monument signs, shopfronts and directional systems — plus maintenance and repair on signage we didn't originally build."
-      },
-      "digital-printing": {
-        "title": "Digital Printing",
-        "summary": "Large and small-format print on rigid, flexible and specialty substrates.",
-        "detail": "High-resolution UV and latex printing for banners, posters, window film, floor graphics and point-of-sale — matched to the material the job actually needs."
+      "signage": {
+        "title": "Signage",
+        "summary": "Design, fabrication and installation of every kind of sign.",
+        "detail": "From concept through to the bolt in the wall: shop fascias, illuminated boxes, built-up letters and free-standing totems, all made in our own workshop and fitted by our own crews.",
+        "covers": [
+          "Flat-cut lettering",
+          "Built-up / 3D lettering",
+          "Illuminated signs",
+          "Acrylic signs",
+          "Totems & pylons",
+          "Shop fascias"
+        ]
       },
       "vehicle-graphics": {
-        "title": "Vehicle Graphics",
-        "summary": "Full and partial wraps, fleet livery and cut-vinyl branding.",
-        "detail": "Turn any van, car or fleet into a moving billboard — designed for the panel lines, installed without bubbles, built to survive Cyprus sun."
+        "title": "Vehicle graphics",
+        "summary": "Turning vehicles into advertising that works while parked.",
+        "detail": "Cast vinyl applied to one van or a fleet of forty, laid out so the message reads at speed and from an angle. It protects the paint underneath and comes off without residue.",
+        "covers": [
+          "Full wraps",
+          "Partial wraps",
+          "Fleet branding",
+          "Window graphics",
+          "Magnetic & removable"
+        ]
       },
-      "engraving-and-cutting": {
-        "title": "Engraving & Cutting",
-        "summary": "Laser and CNC work for precision signage components and awards.",
-        "detail": "Laser-etched plaques, CNC-routed letterforms, cut acrylics and metals — for jobs where the tolerance actually matters."
+      "print-vinyl": {
+        "title": "Print & vinyl",
+        "summary": "Digital printing onto almost any surface, at almost any size.",
+        "detail": "Large and small format printing on vinyl, mesh, fabric and paper, with stock rated for the life the job actually needs — a week on a hoarding or seven years on a shopfront.",
+        "covers": [
+          "Large format",
+          "Small format",
+          "Wall graphics",
+          "Window vinyl",
+          "Floor graphics",
+          "Banners & mesh"
+        ]
+      },
+      "engraving-cutting": {
+        "title": "Engraving & cutting",
+        "summary": "Laser and CNC work to millimetre accuracy.",
+        "detail": "Cutting and engraving acrylic, aluminium, timber and composite panel. We work for end clients and as a trade supplier to other workshops needing contract cutting.",
+        "covers": [
+          "Laser engraving",
+          "Laser cutting",
+          "CNC routing",
+          "Plaques & awards",
+          "Custom shapes"
+        ]
       },
       "building-cladding": {
-        "title": "Building Cladding",
-        "summary": "ACM / Bond panel façades for storefronts and full building exteriors.",
-        "detail": "Composite aluminium panel systems that re-skin a tired façade into a branded, weatherproof exterior — measured, fabricated and installed in-house."
+        "title": "Building cladding",
+        "summary": "Renewing a frontage in aluminium composite panel.",
+        "detail": "Bond panels cut and folded on our CNC, hung on a ventilated subframe. It changes a building's face completely, and lets us design the signage into the panel grid from the start.",
+        "covers": [
+          "Bond / ACM facades",
+          "Building renovation",
+          "Structural signage integration"
+        ]
       },
-      "advertising-and-events": {
-        "title": "Advertising & Events",
-        "summary": "Stands, kiosks, road signage and printed collateral for campaigns.",
-        "detail": "Exhibition stands, event signage, road and site signage, plus the printed materials that go with a launch — business cards, flyers, branded apparel."
+      "promotional-events": {
+        "title": "Promotional & events",
+        "summary": "Everything a stand, campaign or launch needs.",
+        "detail": "Modular exhibition builds that travel in flight cases, plus the road signage, print and merchandise around them. Designed to go up fast and be used again.",
+        "covers": [
+          "Exhibition stands",
+          "Kiosks",
+          "Road signage",
+          "Print collateral",
+          "Branded merchandise"
+        ]
+      },
+      "maintenance-repair": {
+        "title": "Maintenance & repair",
+        "summary": "Keeping signage working — including signs we did not build.",
+        "detail": "Scheduled servicing, LED conversions, repainting and emergency call-outs after storm or accident damage. We tell you honestly when a repair beats a replacement.",
+        "covers": [
+          "Sign servicing",
+          "LED replacement",
+          "Repainting & refurbishment",
+          "Emergency repair"
+        ]
       }
-    }
+    },
+    "covers": "What it covers"
   },
   "About": {
     "kicker": "About Focus Signs",

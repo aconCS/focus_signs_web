@@ -5,24 +5,47 @@ export const navLinks = [
   { href: "/industries", key: "industries" },
 ] as const;
 
+/**
+ * Seven categories, ordered as they appear on the services page.
+ *
+ * Each one names what the thing IS, so nothing belongs in two categories.
+ * Interior/exterior, material and industry are cross-cutting and live as
+ * filters and tags rather than as competing top-level categories.
+ */
 export const serviceSlugs = [
-  "signs-and-installation",
-  "digital-printing",
+  "signage",
   "vehicle-graphics",
-  "engraving-and-cutting",
+  "print-vinyl",
+  "engraving-cutting",
   "building-cladding",
-  "advertising-and-events",
+  "promotional-events",
+  "maintenance-repair",
 ] as const;
 
 export type ServiceSlug = (typeof serviceSlugs)[number];
 
 export const serviceIndex: Record<ServiceSlug, string> = {
-  "signs-and-installation": "01",
-  "digital-printing": "02",
-  "vehicle-graphics": "03",
-  "engraving-and-cutting": "04",
+  signage: "01",
+  "vehicle-graphics": "02",
+  "print-vinyl": "03",
+  "engraving-cutting": "04",
   "building-cladding": "05",
-  "advertising-and-events": "06",
+  "promotional-events": "06",
+  "maintenance-repair": "07",
+};
+
+/**
+ * Explicit rather than derived from the portfolio, so every category has an
+ * image even when no project has been published under it yet.
+ */
+export const servicePhotos: Record<ServiceSlug, string> = {
+  signage: "/photos/papantoniou-led.jpg",
+  "vehicle-graphics": "/photos/van.jpg",
+  "print-vinyl": "/photos/pouttogiros.jpg",
+  "engraving-cutting": "/photos/work.jpg",
+  "building-cladding": "/photos/anemi.jpg",
+  "promotional-events": "/photos/bus.jpg",
+  "maintenance-repair": "/photos/cafeme-led.jpg",
 };
 
 export const companyInfo = {

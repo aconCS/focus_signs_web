@@ -8,17 +8,10 @@ import { ClientLogos } from "@/components/ClientLogos";
 import { AboutReveal } from "@/components/AboutReveal";
 import { DraggableMarquee } from "@/components/DraggableMarquee";
 import { Link } from "@/i18n/navigation";
-import { serviceSlugs, serviceIndex } from "@/lib/content";
+import { serviceSlugs, serviceIndex, servicePhotos } from "@/lib/content";
 import { portfolioProjects } from "@/lib/portfolio";
 import type { ServiceSlug } from "@/lib/content";
 
-const servicePhotos = portfolioProjects.reduce(
-  (acc, project) => {
-    acc[project.service] = project.photo;
-    return acc;
-  },
-  {} as Record<ServiceSlug, string>
-);
 
 function ServiceCard({
   slug,
@@ -80,6 +73,11 @@ export default function Home() {
     summary: tServices(`items.${slug}.summary`),
     photo: servicePhotos[slug],
   }));
+
+  /* Split by index rather than hardcoding positions, so adding or removing a
+     category rebalances the two columns instead of dropping one silently. */
+  const leftColumn = serviceCards.filter((_, i) => i % 2 === 0);
+  const rightColumn = serviceCards.filter((_, i) => i % 2 === 1);
   return (
     <>
       <Hero />
@@ -176,9 +174,9 @@ export default function Home() {
 
         <div className="mt-16 flex flex-col gap-10 lg:mt-32 lg:flex-row lg:items-stretch lg:gap-16">
           <RevealGroup className="flex flex-1 flex-col gap-12">
-            <ServiceCard {...serviceCards[0]} viewLabel={viewServiceLabel} />
-            <ServiceCard {...serviceCards[2]} viewLabel={viewServiceLabel} />
-            <ServiceCard {...serviceCards[4]} viewLabel={viewServiceLabel} />
+            {leftColumn.map((card) => (
+              <ServiceCard key={card.slug} {...card} viewLabel={viewServiceLabel} />
+            ))}
 
             <div className="flex min-h-0 flex-1 flex-col justify-center">
               <div className="flex flex-wrap items-center justify-between gap-5">
@@ -211,9 +209,9 @@ export default function Home() {
                 {t("allServices")}
               </Link>
             </div>
-            <ServiceCard {...serviceCards[1]} viewLabel={viewServiceLabel} />
-            <ServiceCard {...serviceCards[3]} viewLabel={viewServiceLabel} />
-            <ServiceCard {...serviceCards[5]} viewLabel={viewServiceLabel} />
+            {rightColumn.map((card) => (
+              <ServiceCard key={card.slug} {...card} viewLabel={viewServiceLabel} />
+            ))}
           </RevealGroup>
         </div>
       </section>

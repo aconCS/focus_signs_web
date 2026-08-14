@@ -3,8 +3,8 @@ import { useTranslations } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/Reveal";
-import { ImagePlaceholder } from "@/components/ImagePlaceholder";
-import { serviceSlugs, serviceIndex } from "@/lib/content";
+import { Photo } from "@/components/Photo";
+import { serviceSlugs, serviceIndex, servicePhotos } from "@/lib/content";
 import { industrySlugs, industryServices } from "@/lib/industries";
 
 export async function generateMetadata({
@@ -51,6 +51,24 @@ export default function ServicesPage() {
                   <p className="mt-4 max-w-md text-ink/65 leading-relaxed">
                     {t(`items.${slug}.detail`)}
                   </p>
+
+                  {/* What the category actually covers. Listed rather than
+                      buried in prose, so a visitor scanning for one specific
+                      job can find it without reading the paragraph. */}
+                  <h3 className="mt-7 text-xs font-semibold tracking-[0.15em] text-ink/65 uppercase">
+                    {t("covers")}
+                  </h3>
+                  <ul className="mt-3 flex flex-wrap gap-x-2 gap-y-2">
+                    {(t.raw(`items.${slug}.covers`) as string[]).map((entry) => (
+                      <li
+                        key={entry}
+                        className="rounded-full bg-ink/5 px-3 py-1.5 text-sm text-ink"
+                      >
+                        {entry}
+                      </li>
+                    ))}
+                  </ul>
+
                   <div className="mt-6 flex flex-wrap gap-4">
                     <Link
                       href="/contact"
@@ -73,9 +91,12 @@ export default function ServicesPage() {
                       ))}
                   </div>
                 </div>
-                <ImagePlaceholder
-                  brief={t("imageBrief", { service: title.toLowerCase() })}
+                <Photo
+                  src={servicePhotos[slug]}
+                  alt={t("imageBrief", { service: title.toLowerCase() })}
                   ratio="aspect-[5/4]"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
+                  className="rounded-lg!"
                 />
               </Reveal>
             </section>

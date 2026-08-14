@@ -11,11 +11,11 @@ export const industrySlugs: IndustrySlug[] = [
 ];
 
 export const industryServices: Record<IndustrySlug, ServiceSlug[]> = {
-  retail: ["signs-and-installation", "digital-printing", "building-cladding"],
-  hospitality: ["signs-and-installation", "building-cladding", "advertising-and-events"],
-  restaurants: ["signs-and-installation", "digital-printing", "vehicle-graphics"],
-  corporate: ["signs-and-installation", "engraving-and-cutting", "advertising-and-events"],
-  healthcare: ["signs-and-installation", "engraving-and-cutting", "digital-printing"],
+  retail: ["signage", "print-vinyl", "building-cladding"],
+  hospitality: ["signage", "building-cladding", "promotional-events"],
+  restaurants: ["signage", "print-vinyl", "vehicle-graphics"],
+  corporate: ["signage", "engraving-cutting", "promotional-events"],
+  healthcare: ["signage", "engraving-cutting", "print-vinyl"],
 };
 
 export const industryPhotos: Record<IndustrySlug, string> = {
