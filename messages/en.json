@@ -392,9 +392,8 @@
     "name": "Name",
     "email": "Email",
     "phone": "Phone",
-    "phoneOptional": "(optional)",
     "message": "What do you need?",
-    "messagePlaceholder": "Tell us about the job — size, location, timing...",
+    "messagePlaceholder": "Tell us about the job — sizes, materials, anything you already know.",
     "send": "Send Request →",
     "helperIdle": "This opens your email app with the request pre-filled, addressed to us.",
     "helperSent": "Your email app should have opened with everything filled in — just hit send.",
@@ -402,6 +401,16 @@
     "bodyName": "Name",
     "bodyEmail": "Email",
     "bodyPhone": "Phone",
-    "bodyMessage": "Message:"
+    "bodyMessage": "Message:",
+    "optional": "(optional)",
+    "location": "Location",
+    "locationPlaceholder": "Paphos, Limassol, site address...",
+    "budget": "Budget",
+    "budgetPlaceholder": "A rough range is fine",
+    "timeframe": "Timeframe",
+    "timeframePlaceholder": "ASAP, next month, no rush...",
+    "bodyLocation": "Location",
+    "bodyBudget": "Budget",
+    "bodyTimeframe": "Timeframe"
   }
 }
