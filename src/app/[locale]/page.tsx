@@ -177,23 +177,6 @@ export default function Home() {
             {leftColumn.map((card) => (
               <ServiceCard key={card.slug} {...card} viewLabel={viewServiceLabel} />
             ))}
-
-            <div className="flex min-h-0 flex-1 flex-col justify-center">
-              <div className="flex flex-wrap items-center justify-between gap-5">
-                <h3 className="font-display text-2xl font-extrabold leading-[1.05] tracking-tight text-ink uppercase">
-                  {t("browseByLine1")}
-                </h3>
-                <Link
-                  href="/contact"
-                  className="inline-flex w-fit shrink-0 items-center rounded-full bg-acid px-6 py-3 text-xs font-bold tracking-wide text-ink uppercase transition-transform hover:scale-[1.03]"
-                >
-                  {tNav("requestQuote")}
-                </Link>
-              </div>
-              <span className="font-display text-2xl font-extrabold leading-[1.05] tracking-tight text-indigo uppercase">
-                {t("browseByLine2")}
-              </span>
-            </div>
           </RevealGroup>
 
           <RevealGroup className="flex flex-1 flex-col gap-12">
@@ -212,6 +195,27 @@ export default function Home() {
             {rightColumn.map((card) => (
               <ServiceCard key={card.slug} {...card} viewLabel={viewServiceLabel} />
             ))}
+
+            {/* Sits in the gap left by the shorter column — an odd number of
+                services means this side ends one card early, so the prompt
+                lands beside the final service rather than under it.
+                `flex-1` absorbs the leftover height and centres it there. */}
+            <div className="flex min-h-0 flex-1 flex-col justify-center">
+              <div className="flex flex-wrap items-center justify-between gap-5">
+                <h3 className="font-display text-2xl font-extrabold leading-[1.05] tracking-tight text-ink uppercase">
+                  {t("browseByLine1")}
+                </h3>
+                <Link
+                  href="/contact"
+                  className="inline-flex w-fit shrink-0 items-center rounded-full bg-acid px-6 py-3 text-xs font-bold tracking-wide text-ink uppercase transition-transform hover:scale-[1.03]"
+                >
+                  {tNav("requestQuote")}
+                </Link>
+              </div>
+              <span className="font-display text-2xl font-extrabold leading-[1.05] tracking-tight text-indigo uppercase">
+                {t("browseByLine2")}
+              </span>
+            </div>
           </RevealGroup>
         </div>
       </section>

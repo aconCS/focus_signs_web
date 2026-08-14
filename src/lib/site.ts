@@ -4,4 +4,4 @@
  * Everything SEO-related (sitemap, robots, canonicals, JSON-LD) reads from here.
  */
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.focussigns.com.cy";
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.focussigns.cy";
