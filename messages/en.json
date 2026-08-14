@@ -1,0 +1,353 @@
+{
+  "Meta": {
+    "title": "Focus Signs — Signage & Print, Paphos Cyprus",
+    "description": "Signs, digital printing, vehicle graphics, engraving and building cladding fabricated in Paphos, Cyprus. 20+ years in the trade — request a quote.",
+    "servicesTitle": "Signage & Printing Services in Paphos | Focus Signs",
+    "servicesDescription": "Sign fabrication, large-format printing, vehicle wraps, laser engraving, ACM cladding and exhibition stands — made and installed in-house across Cyprus.",
+    "aboutTitle": "About Focus Signs — Sign Makers in Paphos Since 2005",
+    "aboutDescription": "Over 20 years fabricating signage, print and vehicle graphics in Paphos, Cyprus. Meet the workshop, our process, materials, service areas and FAQs.",
+    "portfolioTitle": "Our Work — Signage & Print Projects in Cyprus | Focus Signs",
+    "portfolioDescription": "Recent signage, vehicle wrap, cladding and large-format print projects delivered by the Focus Signs workshop in Paphos, Cyprus.",
+    "contactTitle": "Contact Focus Signs — Paphos, Cyprus",
+    "contactDescription": "Get a signage or printing quote from Focus Signs in Paphos. Email us, see our opening hours and find the workshop on the map.",
+    "quoteTitle": "Your Quote List | Focus Signs",
+    "quoteDescription": "Review the items on your quote list and send them to the Focus Signs workshop for a tailored price.",
+    "industriesTitle": "Industries We Sign & Print For | Focus Signs Paphos",
+    "industriesDescription": "Signage and print work tailored to retail, hospitality, restaurants, corporate offices and healthcare across Cyprus.",
+    "industryTitle": "{industry} Signage in Paphos & Cyprus | Focus Signs",
+    "industryDescription": "{intro}"
+  },
+  "Nav": {
+    "services": "Services",
+    "portfolio": "Work",
+    "industries": "Industries",
+    "about": "About",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language",
+    "changeLanguage": "Change language",
+    "skipToContent": "Skip to main content"
+  },
+  "Locales": {
+    "en": "English",
+    "el": "Ελληνικά",
+    "ru": "Русский"
+  },
+  "Footer": {
+    "tagline": "Signage, print and fabrication out of Paphos, Cyprus — for businesses who need it made properly, and made once.",
+    "site": "Site",
+    "hoursTitle": "Hours",
+    "contactTitle": "Contact",
+    "rights": "© {year} Focus Signs. All rights reserved."
+  },
+  "Hours": {
+    "weekdays": "Monday – Friday",
+    "weekdaysTime": "08:00 – 17:00",
+    "saturday": "Saturday",
+    "saturdayTime": "By appointment",
+    "sunday": "Sunday",
+    "sundayTime": "Closed"
+  },
+  "Home": {
+    "heroLine1": "Signage & Printing",
+    "heroLine2": "Solutions in Cyprus",
+    "heroSub": "Signs, digital printing, vehicle graphics, engraving and full building cladding — designed and fabricated in one Paphos workshop for over 20 years.",
+    "heroPhotoAlt": "Illuminated restaurant signage lit up at night",
+    "heroPhotoTag": "Recent install, Paphos",
+    "ctaQuote": "Request a Quote",
+    "ctaWork": "See Our Work",
+    "servicesHeading1": "Great ideas.",
+    "servicesHeading2": "Great Signs.",
+    "allServices": "All services →",
+    "browseByLine1": "Looking for something",
+    "browseByLine2": "specific?",
+    "statYearsValue": "20+",
+    "statYearsLabel": "Years fabricating signage in Paphos",
+    "statLinesValue": "6",
+    "statLinesLabel": "In-house service lines, one workshop",
+    "statLangValue": "3",
+    "statLangLabel": "Languages spoken on-site — EN / EL / RU",
+    "ctaBandTitle": "Got a wall, a van, or a shopfront that needs work?",
+    "ctaBandSub": "Tell us the job — we'll come back with a quote, not a sales pitch.",
+    "ctaBandReassurance": "Itemised quote back within one working day, no obligation.",
+    "ctaBandButton": "Request a Quote",
+    "recentWorkTitle": "Recent Projects",
+    "recentWorkSubtitle": "A look at signage and printing services we've delivered across Cyprus.",
+    "recentWorkCta": "See all work →",
+    "aboutLead": "Focus Signs",
+    "aboutRest": "designs, manufactures and installs signage and branded environments across Cyprus. From a single shopfront sign to full nationwide rollouts, every project gets the same close attention, in-house, from first sketch to final installation.",
+    "aboutCta": "About us →"
+  },
+  "Services": {
+    "kicker": "Services",
+    "title": "Six trades, one roof.",
+    "subtitle": "Everything from first sketch to bolted-on installation happens in-house. Our team will guide your project from idea to a finished installed piece.",
+    "askAbout": "Ask about {service} →",
+    "viewService": "View service →",
+    "imageBrief": "Wide shot of a real {service} job in progress or finished — favour on-site, in-Paphos photography over stock.",
+    "items": {
+      "signs-and-installation": {
+        "title": "Signs & Installation",
+        "summary": "Design, fabrication, assembly and on-site installation of every sign type.",
+        "detail": "From concept sketch to bolted-on reality: illuminated fascias, monument signs, shopfronts and directional systems — plus maintenance and repair on signage we didn't originally build."
+      },
+      "digital-printing": {
+        "title": "Digital Printing",
+        "summary": "Large and small-format print on rigid, flexible and specialty substrates.",
+        "detail": "High-resolution UV and latex printing for banners, posters, window film, floor graphics and point-of-sale — matched to the material the job actually needs."
+      },
+      "vehicle-graphics": {
+        "title": "Vehicle Graphics",
+        "summary": "Full and partial wraps, fleet livery and cut-vinyl branding.",
+        "detail": "Turn any van, car or fleet into a moving billboard — designed for the panel lines, installed without bubbles, built to survive Cyprus sun."
+      },
+      "engraving-and-cutting": {
+        "title": "Engraving & Cutting",
+        "summary": "Laser and CNC work for precision signage components and awards.",
+        "detail": "Laser-etched plaques, CNC-routed letterforms, cut acrylics and metals — for jobs where the tolerance actually matters."
+      },
+      "building-cladding": {
+        "title": "Building Cladding",
+        "summary": "ACM / Bond panel façades for storefronts and full building exteriors.",
+        "detail": "Composite aluminium panel systems that re-skin a tired façade into a branded, weatherproof exterior — measured, fabricated and installed in-house."
+      },
+      "advertising-and-events": {
+        "title": "Advertising & Events",
+        "summary": "Stands, kiosks, road signage and printed collateral for campaigns.",
+        "detail": "Exhibition stands, event signage, road and site signage, plus the printed materials that go with a launch — business cards, flyers, branded apparel."
+      }
+    }
+  },
+  "About": {
+    "kicker": "About Focus Signs",
+    "title": "Twenty years of getting it made properly.",
+    "heroTitleLine1": "Twenty years of",
+    "heroTitleLine2": "getting it made properly.",
+    "body": "Focus Signs has been designing, printing and fabricating signage out of Paphos for over two decades. What started as a small sign workshop now covers everything from illuminated shopfronts to full building façades — still run out of the same city, still hands-on with every job that leaves the workshop.",
+    "cta": "Talk to us about a job",
+    "ctaSecondary": "Browse the catalog",
+    "imageBrief": "Workshop interior — team mid-fabrication, laser/CNC equipment or a finished sign being loaded for install. Candid, not posed.",
+    "introLead": "Focus Signs",
+    "introRest": "designs, prints and fabricates signage out of a single Paphos workshop — illuminated shopfronts, vehicle graphics, laser-cut components and full building cladding, all measured, made and installed by the same team that quoted the job.",
+    "workshopTitle": "Our workshop.",
+    "workshopSubtitle": "A behind-the-scenes look at where signage gets designed, built and prepared for installation.",
+    "projectsTitle": "Featured projects.",
+    "projectsSubtitle": "A sample of signage and branded environments we've delivered across Cyprus.",
+    "projectsCta": "View all projects →",
+    "storyKicker": "Our story",
+    "storyTitle": "From a single sign bench to a full fabrication shop.",
+    "storyP1": "Focus Signs opened in Paphos in 2005 with one vinyl plotter and a short list of local clients. The work was simple then — shopfront lettering, a few vehicle doors, the occasional banner. What kept the phone ringing was not the equipment but the habit of finishing properly: straight lines, clean edges, fixings that held.",
+    "storyP2": "Two decades later the same workshop runs UV and latex printers, a laser cutter, a CNC router and a fabrication bay for composite panel work. The client list has grown from single shopfronts to hotel groups, developers, municipalities and national franchises — but the jobs still get measured, made and installed by the same people who quoted them.",
+    "storyP3": "We stayed in Paphos on purpose. Being local means we can survey a site in the morning, prototype in the afternoon and be back on site to install without shipping anything across the island. It also means we live with our own work — you'll see our signage on the way to the workshop every day, which is a strong incentive to get it right.",
+    "storyImageBrief": "Archive or wide workshop shot showing the scale of the operation — printers, cutting beds, panels stacked. Landscape orientation.",
+    "processKicker": "How a job runs",
+    "processTitle": "Five steps from enquiry to installed.",
+    "processSubtitle": "No mystery, no handoffs to a third party. Here's exactly what happens after you send a brief.",
+    "processSteps": {
+      "brief": {
+        "title": "Brief & quote",
+        "body": "You describe the job — or send a photo of the wall, the van, the unit. We come back with a scoped, itemised quote, usually within one working day."
+      },
+      "survey": {
+        "title": "Site survey",
+        "body": "For anything installed, we measure on site: substrate, access, power routes, fixings and any planning constraints. Guessing dimensions is how signage ends up crooked."
+      },
+      "design": {
+        "title": "Design & proof",
+        "body": "You get a visual mock-up on your actual building or vehicle, not a generic template. Nothing goes to production until you've approved the proof."
+      },
+      "fabrication": {
+        "title": "Fabrication",
+        "body": "Printing, cutting, routing, welding and assembly all happen in our Paphos workshop, so we control quality and timeline rather than chasing a supplier."
+      },
+      "install": {
+        "title": "Installation & aftercare",
+        "body": "Our own team installs, tests the electrics and cleans up. We keep your artwork on file so replacements and additions match years later."
+      }
+    },
+    "capabilitiesKicker": "In the workshop",
+    "capabilitiesTitle": "What we can actually make.",
+    "capabilitiesSubtitle": "Owning the equipment means shorter lead times and no minimum order dictated by someone else's production schedule.",
+    "capabilities": {
+      "printing": {
+        "title": "Wide-format printing",
+        "body": "UV and latex printing on rigid and flexible media, up to large-scale panels and full building wraps."
+      },
+      "laser": {
+        "title": "Laser cutting & engraving",
+        "body": "Precision cutting and etching of acrylic, wood and coated metals for plaques, letters and detailed components."
+      },
+      "cnc": {
+        "title": "CNC routing",
+        "body": "Routed letterforms, shaped panels and composite fabrication with repeatable tolerances across a production run."
+      },
+      "fabrication": {
+        "title": "Metal & panel fabrication",
+        "body": "Aluminium trays, folded returns and ACM/Bond composite panel systems built for outdoor conditions."
+      },
+      "electrical": {
+        "title": "LED & illumination",
+        "body": "Face-lit, halo-lit and edge-lit builds with IP-rated drivers specified for continuous outdoor use."
+      },
+      "installation": {
+        "title": "Survey & installation",
+        "body": "Our own installation crews, working at height where needed, with fixings chosen for the actual substrate."
+      }
+    },
+    "materialsKicker": "Materials",
+    "materialsTitle": "Chosen for Cyprus, not for a catalogue photo.",
+    "materialsBody": "UV exposure, salt air and summer heat destroy signage that was specified for a milder climate. We default to materials that survive here: cast vinyls rather than calendered films on curved vehicle panels, UV-stable acrylics, marine-grade fixings near the coast, and powder-coated or anodised aluminium instead of untreated steel. If a cheaper build makes sense for a short-term campaign, we'll say so — and tell you how long it will realistically last.",
+    "materialsList": "Aluminium composite (ACM / Bond) · Cast and calendered vinyl · UV-stable acrylic · Powder-coated aluminium · Dibond · Foamex · Mesh and PVC banner · Stainless fixings",
+    "areasKicker": "Where we work",
+    "areasTitle": "Based in Paphos, working across Cyprus.",
+    "areasBody": "The workshop is in Paphos and most of our installations are within an hour's drive. We regularly travel further for larger contracts, fleet rollouts and multi-site brand rollouts across the island.",
+    "areasList": "Paphos · Limassol · Nicosia · Larnaca · Famagusta district · Polis & Latchi · Coral Bay · Peyia",
+    "whyKicker": "Why clients stay",
+    "howWeWork": "How we work",
+    "values": {
+      "inHouse": {
+        "title": "Made in-house",
+        "body": "Design, print, fabrication and installation stay under one roof — so nothing gets lost between a subcontractor and your deadline."
+      },
+      "weather": {
+        "title": "Built for Cyprus weather",
+        "body": "Materials and fixings are chosen for sun, salt air and wind — not just for how a proof looks on screen."
+      },
+      "quotes": {
+        "title": "Straight quotes",
+        "body": "You get a scoped quote for the job in front of you, not a pitch for extras you didn't ask for."
+      },
+      "multilingual": {
+        "title": "Three languages on site",
+        "body": "Brief us in English, Greek or Russian — including artwork and copy set in all three, correctly typeset."
+      },
+      "archive": {
+        "title": "Your artwork, kept on file",
+        "body": "We archive every job, so a replacement panel or a second branch matches the original years later."
+      },
+      "onePoint": {
+        "title": "One point of contact",
+        "body": "The person who quotes your job is the person who sees it through — no account-manager relay."
+      }
+    },
+    "faqKicker": "Common questions",
+    "faqTitle": "Frequently asked questions",
+    "faqSubtitle": "Still unsure about something? Send us the question directly — we answer quotes and queries the same way.",
+    "faq": {
+      "leadTime": {
+        "q": "How long does a signage job take?",
+        "a": "Simple printed work such as banners or window graphics is usually ready in 2–4 working days. Fabricated and illuminated signs typically run 2–3 weeks from approved artwork, depending on materials and whether installation at height is required. Full building cladding is quoted per project after a site survey. If you have a fixed deadline, tell us up front and we'll confirm before you commit."
+      },
+      "areas": {
+        "q": "Do you work outside Paphos?",
+        "a": "Yes. The workshop is in Paphos and we install across Cyprus, including Limassol, Nicosia, Larnaca and the Famagusta district. Travel for installation outside the Paphos district is included in the quote so there are no surprises afterwards."
+      },
+      "permits": {
+        "q": "Do I need permission for an exterior sign?",
+        "a": "Often yes — exterior signage in Cyprus can require municipal approval, and listed or tourist-zone buildings have extra restrictions. We tell you during the quote whether your sign is likely to need consent, and we can supply the drawings and specifications your application will ask for."
+      },
+      "design": {
+        "q": "Can you design the sign, or do I need to supply artwork?",
+        "a": "Either works. Send print-ready artwork and we'll use it, or give us your logo and we'll design the layout. Every job gets a visual proof on a photo of your actual building or vehicle before anything goes to production."
+      },
+      "materials": {
+        "q": "What materials do you recommend for outdoor signage in Cyprus?",
+        "a": "For anything permanent outdoors we specify UV-stable acrylics, composite aluminium panels, cast vinyl on curved surfaces and marine-grade fixings near the coast. Cheaper films and untreated steel look identical on day one and fail within a season or two under Cyprus sun and salt air."
+      },
+      "maintenance": {
+        "q": "Do you repair or maintain existing signs?",
+        "a": "Yes, including signage we didn't originally build. Common jobs are LED and driver replacement, re-facing an existing tray with new branding, and re-fixing panels after storm damage. Re-facing is usually far cheaper than a complete rebuild."
+      },
+      "pricing": {
+        "q": "Why are there no prices on the website?",
+        "a": "Because size, material, illumination, quantity and installation access change the cost far more than the product name does. Add what you need to the quote list and send it over — you'll get an itemised price for your actual job, usually within one working day."
+      },
+      "languages": {
+        "q": "Can you produce signage in Greek and Russian?",
+        "a": "Yes. We work daily in English, Greek and Russian, including multilingual signage and correctly typeset Greek and Cyrillic — which matters, because auto-translated or badly kerned text is immediately obvious to native readers."
+      }
+    },
+    "finalCtaTitle": "Ready to talk about your project?",
+    "finalCtaBody": "Send a photo and a rough idea of what you need. We'll come back with an itemised quote — usually within one working day.",
+    "finalCtaButton": "Request a Quote",
+    "finalCtaSecondary": "See our work"
+  },
+  "Portfolio": {
+    "kicker": "Our Work",
+    "title": "Recent jobs from the workshop.",
+    "subtitle": "A running record of what's left the shop — signage, wraps, cladding and print delivered across Cyprus.",
+    "addTitle": "Add project title",
+    "imageBrief": "{category} — before/after or hero install shot for this project.",
+    "filterAll": "All work",
+    "viewProject": "View project",
+    "emptyFilter": "No projects in this category yet.",
+    "ctaTitle": "Want something like this for your business?",
+    "ctaBody": "Tell us what you're planning and we'll quote it properly.",
+    "ctaButton": "Request a Quote"
+  },
+  "Industries": {
+    "hubKicker": "Industries",
+    "hubTitle": "Signage built around how your business actually runs.",
+    "hubSubtitle": "A retail unit, a hotel and a clinic need very different signage — different materials, different regulations, different priorities. Here's how we approach each.",
+    "relevantServices": "Relevant services",
+    "ctaTitle": "Discuss a {industry} project",
+    "ctaBody": "Send a photo of the site and what you're picturing — we'll scope it properly.",
+    "backToHub": "All industries",
+    "items": {
+      "retail": {
+        "title": "Retail",
+        "tagline": "Storefronts that get found and get walked into.",
+        "intro": "Retail signage has one job: get someone off the street and through the door. We build fascia signs, window graphics and floor wayfinding that read clearly from a moving car and hold up to daily foot traffic."
+      },
+      "hospitality": {
+        "title": "Hospitality & Hotels",
+        "tagline": "Wayfinding and branding for guests who don't know the building yet.",
+        "intro": "Hotels and resorts need signage a first-time guest can follow without asking — entrance monuments, room and floor numbering, and façade branding that matches the property's positioning, indoors and out."
+      },
+      "restaurants": {
+        "title": "Restaurants & Cafés",
+        "tagline": "Menus, façades and window graphics that earn a second look.",
+        "intro": "A restaurant's signage sets the price expectation before anyone reads the menu. We produce illuminated fascias, window vinyl and banners built to survive kitchen heat, sea air and constant cleaning."
+      },
+      "corporate": {
+        "title": "Corporate & Offices",
+        "tagline": "Reception branding, wayfinding and site identity.",
+        "intro": "Reception signage, meeting room numbering, directional systems and site identity for offices, business parks and industrial sites — designed to read as considered, not improvised."
+      },
+      "healthcare": {
+        "title": "Healthcare & Clinics",
+        "tagline": "Clear wayfinding where confusion has a real cost.",
+        "intro": "Clinics and healthcare sites need wayfinding that works under stress — clear directional signage, department numbering and window graphics that meet privacy needs without feeling clinical."
+      }
+    }
+  },
+  "Contact": {
+    "kicker": "Contact",
+    "title": "Tell us about the job.",
+    "subtitle": "Send the details and we'll get back to you with a proper quote — usually within one working day.",
+    "workshop": "Workshop",
+    "email": "Email",
+    "hours": "Hours",
+    "openInMaps": "Open in Maps",
+    "quoteCartPrompt": "Already picked services?",
+    "quoteCartLink": "Send your quote cart instead →"
+  },
+  "QuoteForm": {
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "phoneOptional": "(optional)",
+    "message": "What do you need?",
+    "messagePlaceholder": "Tell us about the job — size, location, timing...",
+    "send": "Send Request →",
+    "helperIdle": "This opens your email app with the request pre-filled, addressed to us.",
+    "helperSent": "Your email app should have opened with everything filled in — just hit send.",
+    "subject": "Quote request — {name}",
+    "bodyName": "Name",
+    "bodyEmail": "Email",
+    "bodyPhone": "Phone",
+    "bodyMessage": "Message:"
+  }
+}
