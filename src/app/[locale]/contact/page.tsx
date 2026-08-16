@@ -5,8 +5,6 @@ import { QuoteForm } from "@/components/QuoteForm";
 import { LocationMap } from "@/components/LocationMap";
 import { companyInfo } from "@/lib/content";
 
-const mapsSearchUrl = `https://maps.app.goo.gl/18PGz9TF3XzyLZAWA`;
-
 export async function generateMetadata({
   params,
 }: {
@@ -37,12 +35,15 @@ export default function ContactPage() {
       </h1>
       <p className="mt-4 max-w-md text-ink/65 leading-relaxed">{t("subtitle")}</p>
 
-      <div className="mt-12 grid overflow-hidden rounded-3xl lg:grid-cols-2">
+      {/* Shadow sits on the card, not the white half inside it — `overflow-hidden`
+          here clips the rounded corners and would clip an inner shadow too.
+          Tinted with ink rather than black so it stays in the brand family. */}
+      <div className="mt-12 grid overflow-hidden rounded-3xl shadow-[0_28px_70px_-24px_rgba(21,18,31,0.45)] lg:grid-cols-2">
         <div className="flex flex-col gap-8 bg-indigo p-8 text-white sm:p-10">
           <div className="relative overflow-hidden rounded-2xl">
             <LocationMap className="aspect-[4/3]" />
             <a
-              href={mapsSearchUrl}
+              href={companyInfo.mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-lg bg-white px-3 py-2 text-xs font-semibold text-indigo shadow-md transition-colors hover:text-ink"

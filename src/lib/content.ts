@@ -53,4 +53,11 @@ export const companyInfo = {
   city: "Paphos, Cyprus",
   address: "Akropoleos 31, Emba, Paphos, Cyprus",
   email: "focus.signs.cs@gmail.com",
+  /** Short link to the Google Business listing, for the "open in maps" action. */
+  mapsUrl: "https://maps.app.goo.gl/h7rP8J2FXSa5VaZ49",
+  /**
+   * Name plus address for the embedded map, so the pin lands on the business
+   * listing rather than wherever the street address alone geocodes to.
+   */
+  mapsQuery: "Focus Signs & Printing, Akropoleos 31, Emba, Paphos, Cyprus",
 };

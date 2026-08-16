@@ -2,7 +2,7 @@ import { companyInfo } from "@/lib/content";
 
 export function LocationMap({ className = "" }: { className?: string }) {
   const src = `https://www.google.com/maps?q=${encodeURIComponent(
-    companyInfo.address
+    companyInfo.mapsQuery
   )}&output=embed`;
 
   return (
