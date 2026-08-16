@@ -38,11 +38,11 @@ export function ClientLogos({ heading }: { heading?: string }) {
               /* Every logo gets the same box height and the same width budget.
                  object-contain then fits each mark inside it, so wide marks and
                  square marks read at a consistent optical size instead of each
-                 being scaled by its own aspect ratio. */
-              /* transition only what changes on hover — `transition-all` makes
-                 the compositor watch every animatable property on 16 nodes
-                 that are already moving. */
-              className="relative h-16 w-40 shrink-0 opacity-60 grayscale transition-[filter,opacity] duration-300 hover:opacity-100 hover:grayscale-0 md:h-20 md:w-48"
+                 being scaled by its own aspect ratio.
+
+                 Shown in full colour: these are recognisable brands and the
+                 recognition is the point. */
+              className="relative h-16 w-40 shrink-0 md:h-20 md:w-48"
             >
               <Image
                 src={`/logos/${logo.file}`}

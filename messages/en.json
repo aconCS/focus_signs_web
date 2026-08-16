@@ -78,7 +78,8 @@
     "recentWorkCta": "See all work →",
     "aboutLead": "Focus Signs",
     "aboutRest": "designs, manufactures and installs signage and branded environments across Cyprus. From a single shopfront sign to full nationwide rollouts, every project gets the same close attention, in-house, from first sketch to final installation.",
-    "aboutCta": "About us →"
+    "aboutCta": "About us →",
+    "trustedBy": "Trusted all over Cyprus"
   },
   "Services": {
     "kicker": "Services",
@@ -257,7 +258,7 @@
     "areasKicker": "Where we work",
     "areasTitle": "Based in Paphos, working across Cyprus.",
     "areasBody": "The workshop is in Paphos and most of our installations are within an hour's drive. We regularly travel further for larger contracts, fleet rollouts and multi-site brand rollouts across the island.",
-    "areasList": "Paphos · Limassol · Nicosia · Larnaca · Famagusta district · Polis & Latchi · Coral Bay · Peyia",
+    "areasList": "Paphos · Limassol · Nicosia · Larnaca · Polis & Latchi · Coral Bay · Peyia",
     "whyKicker": "Why clients stay",
     "howWeWork": "How we work",
     "values": {

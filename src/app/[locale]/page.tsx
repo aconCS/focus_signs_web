@@ -106,7 +106,7 @@ export default function Home() {
         </div>
 
         <Reveal className="shell">
-          <ClientLogos />
+          <ClientLogos heading={t("trustedBy")} />
         </Reveal>
       </section>
 
