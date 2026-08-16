@@ -53,7 +53,11 @@ export const companyInfo = {
   city: "Paphos, Cyprus",
   address: "Akropoleos 31, Emba, Paphos, Cyprus",
   email: "focus.signs.cs@gmail.com",
-  /** Short link to the Google Business listing, for the "open in maps" action. */
+  /**
+   * Short link to the Google Business listing. Not rendered anywhere at the
+   * moment — kept because it is the verified listing URL, and it is the right
+   * href if the address is ever made clickable.
+   */
   mapsUrl: "https://maps.app.goo.gl/h7rP8J2FXSa5VaZ49",
   /**
    * Name plus address for the embedded map, so the pin lands on the business

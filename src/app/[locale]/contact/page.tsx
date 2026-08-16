@@ -40,28 +40,7 @@ export default function ContactPage() {
           Tinted with ink rather than black so it stays in the brand family. */}
       <div className="mt-12 grid overflow-hidden rounded-3xl shadow-[0_28px_70px_-24px_rgba(21,18,31,0.45)] lg:grid-cols-2">
         <div className="flex flex-col gap-8 bg-indigo p-8 text-white sm:p-10">
-          <div className="relative overflow-hidden rounded-2xl">
-            <LocationMap className="aspect-[4/3]" />
-            <a
-              href={companyInfo.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-lg bg-white px-3 py-2 text-xs font-semibold text-indigo shadow-md transition-colors hover:text-ink"
-            >
-              {t("openInMaps")}
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth={2}
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="size-3.5"
-              >
-                <path d="M7 17 17 7M8 7h9v9" />
-              </svg>
-            </a>
-          </div>
+          <LocationMap className="aspect-[4/3]" />
 
           <dl className="flex flex-col gap-5">
             <div className="flex items-center gap-3">
