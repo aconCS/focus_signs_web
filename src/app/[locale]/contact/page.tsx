@@ -27,10 +27,7 @@ export default function ContactPage() {
 
   return (
     <section className="mx-auto max-w-[1400px] px-6 py-16 lg:px-10 lg:py-24">
-      <p className="text-xs font-semibold tracking-[0.2em] text-indigo uppercase">
-        {t("kicker")}
-      </p>
-      <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
+      <h1 className="font-display text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
         {t("title")}
       </h1>
       <p className="mt-4 max-w-md text-ink/65 leading-relaxed">{t("subtitle")}</p>

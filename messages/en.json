@@ -379,9 +379,8 @@
     }
   },
   "Contact": {
-    "kicker": "Contact",
     "title": "Tell us about the job.",
-    "subtitle": "Send the details and we'll get back to you with a proper quote — usually within one working day.",
+    "subtitle": "Send the details and we'll get back to you with a proper quote.",
     "workshop": "Workshop",
     "email": "Email",
     "hours": "Hours",
