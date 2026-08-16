@@ -5,8 +5,16 @@ import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { Reveal, RevealGroup } from "@/components/Reveal";
 import { Photo } from "@/components/Photo";
+import { PortfolioLightbox } from "@/components/PortfolioLightbox";
 import { serviceSlugs, serviceIndex, type ServiceSlug } from "@/lib/content";
 import { portfolioProjects, ratioClass } from "@/lib/portfolio";
+
+function titleFromSlug(slug: string) {
+  return slug
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
 
 export default function PortfolioPage() {
   const t = useTranslations("Portfolio");
@@ -73,21 +81,27 @@ export default function PortfolioPage() {
           <RevealGroup className="mt-10 columns-1 gap-8 sm:columns-2 lg:columns-3">
             {filtered.map((project) => {
               const category = tServices(`items.${project.service}.title`);
+              const title = titleFromSlug(project.slug);
               return (
                 <div key={project.slug} className="mb-8 break-inside-avoid">
-                  <Photo
-                    src={project.photo}
-                    alt={t("imageBrief", { category })}
-                    ratio={ratioClass[project.ratio]}
-                  />
+                  <div className="relative">
+                    <Photo
+                      src={project.photo}
+                      alt={t("imageBrief", { category })}
+                      ratio={ratioClass[project.ratio]}
+                    />
+                    <PortfolioLightbox
+                      photos={project.photos}
+                      title={title}
+                      closeLabel={t("close")}
+                    />
+                  </div>
                   <div className="mt-4 flex items-baseline gap-3">
                     <span className="font-display text-sm font-semibold text-ink/65">
                       {serviceIndex[project.service]}
                     </span>
                     <div>
-                      <h3 className="font-display text-lg font-medium text-ink">
-                        {t("addTitle")}
-                      </h3>
+                      <h3 className="font-display text-lg font-medium text-ink">{title}</h3>
                       <p className="text-sm text-ink/65">
                         {category} · {dateFormatter.format(new Date(project.date))}
                       </p>

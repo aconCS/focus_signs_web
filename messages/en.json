@@ -333,14 +333,14 @@
     "kicker": "Our Work",
     "title": "Recent jobs from the workshop.",
     "subtitle": "A running record of what's left the shop — signage, wraps, cladding and print delivered across Cyprus.",
-    "addTitle": "Add project title",
     "imageBrief": "{category} — before/after or hero install shot for this project.",
     "filterAll": "All work",
     "viewProject": "View project",
     "emptyFilter": "No projects in this category yet.",
     "ctaTitle": "Want something like this for your business?",
     "ctaBody": "Tell us what you're planning and we'll quote it properly.",
-    "ctaButton": "Request a Quote"
+    "ctaButton": "Request a Quote",
+    "close": "Close"
   },
   "Industries": {
     "hubKicker": "Industries",
