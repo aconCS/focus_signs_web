@@ -87,6 +87,28 @@ export const getServiceCovers = cache((): Partial<Record<ServiceSlug, string>> =
   return covers;
 });
 
+/**
+ * Every cover photo for a service, newest first. There is no per-subcategory
+ * tag in the content model, so the services page cycles through these to give
+ * each subcategory card a distinct-looking photo rather than repeating one
+ * cover across the whole row.
+ */
+export const getServicePhotos = cache((): Record<ServiceSlug, string[]> => {
+  const photos: Record<ServiceSlug, string[]> = {
+    signage: [],
+    "vehicle-graphics": [],
+    "print-vinyl": [],
+    "engraving-cutting": [],
+    "building-cladding": [],
+    "promotional-events": [],
+    "maintenance-repair": [],
+  };
+  for (const project of getPortfolioProjects()) {
+    photos[project.service].push(project.photo);
+  }
+  return photos;
+});
+
 /** Cover shot per industry, taken from the newest project in that industry. */
 export const getIndustryCovers = cache(
   (): Partial<Record<PortfolioIndustry, string>> => {

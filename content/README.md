@@ -30,24 +30,25 @@ between your client and GitHub.
 1. **Create a GitHub OAuth App** at
    https://github.com/settings/developers → *New OAuth App*.
    - Homepage URL: your production URL (e.g. `https://focussigns.cy`)
-   - Authorization callback URL: `https://focussigns.cy/api/callback`
-     (must match exactly — GitHub rejects anything else)
+   - Redirect URIs (GitHub allows up to 10 — add both, one per line):
+     - `https://focussigns.cy/api/callback`
+     - `http://localhost:3000/api/callback` (optional, only if you want to
+       test the CMS locally)
+   - Leave "Allow wildcard matching" and "Enable Device Flow" unchecked.
 2. **Copy the Client ID**, then generate and copy a **Client Secret**.
 3. **Add two environment variables in Vercel** (Project Settings → Environment
    Variables), Production scope:
    - `GITHUB_OAUTH_CLIENT_ID`
    - `GITHUB_OAUTH_CLIENT_SECRET`
-4. **Set `base_url` in `public/admin/config.yml`** to your real production
-   domain (it's currently a placeholder).
-5. Redeploy. Your client can now open `/admin`, sign in with their own GitHub
+   For local testing, put the same two values in `.env.local` (gitignored).
+4. Redeploy. Your client can now open `/admin`, sign in with their own GitHub
    account, and edit.
 
-### Local testing (optional)
-
-GitHub OAuth Apps only accept one callback URL each, so testing against
-`localhost` needs a second OAuth App (callback URL
-`http://localhost:3000/api/callback`) with its own Client ID/Secret in
-`.env.local`. Not required for the deployed site to work.
+`base_url` in the CMS config is filled in automatically from whatever host
+served the request (`src/app/api/admin-config/route.ts`) — it resolves to
+`http://localhost:3000` when you're running `npm run dev` and to your real
+domain once deployed, so there's nothing to edit or forget to revert between
+the two.
 
 ## Access control
 

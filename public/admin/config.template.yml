@@ -4,13 +4,13 @@
 # the sync script writes. Editing here commits straight to GitHub, which
 # redeploys the site. There is no database and no separate media host.
 
+# base_url is filled in per-request by src/app/api/admin-config/route.ts —
+# do not hardcode a domain here, it needs to match localhost during dev too.
 backend:
   name: github
   repo: aconCS/focus_signs_web
   branch: master
-  # Must match the domain the CMS is served from — GitHub only redirects back
-  # to the callback URL registered on the OAuth app, so this has to be exact.
-  base_url: https://REPLACE-WITH-YOUR-DOMAIN
+  base_url: __BASE_URL__
   auth_endpoint: api/auth
 
 # Fallback only — the photos field below overrides this per project so new
