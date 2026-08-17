@@ -1,0 +1,13 @@
+{
+  "title": "ERB Asfalistiki Bus",
+  "client": "ERB Asfalistiki Bus",
+  "service": "vehicle-graphics",
+  "industry": "corporate",
+  "date": "2026-01-28",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/vehicle-graphics/erb-asfalistiki-bus/01.jpg",
+    "/photos/portfolio/vehicle-graphics/erb-asfalistiki-bus/02.jpg",
+    "/photos/portfolio/vehicle-graphics/erb-asfalistiki-bus/03.jpg"
+  ]
+}

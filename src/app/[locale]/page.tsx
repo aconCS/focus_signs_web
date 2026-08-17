@@ -8,8 +8,8 @@ import { ClientLogos } from "@/components/ClientLogos";
 import { AboutReveal } from "@/components/AboutReveal";
 import { DraggableMarquee } from "@/components/DraggableMarquee";
 import { Link } from "@/i18n/navigation";
-import { serviceSlugs, serviceIndex, servicePhotos } from "@/lib/content";
-import { portfolioProjects } from "@/lib/portfolio";
+import { serviceSlugs, serviceIndex } from "@/lib/content";
+import { getPortfolioProjects, getServiceCovers } from "@/lib/portfolio.server";
 import type { ServiceSlug } from "@/lib/content";
 
 
@@ -60,7 +60,8 @@ export default function Home() {
   const tPortfolio = useTranslations("Portfolio");
   const tNav = useTranslations("Nav");
 
-  const recentWork = [...portfolioProjects].sort((a, b) => (a.date < b.date ? 1 : -1));
+  const recentWork = getPortfolioProjects();
+  const serviceCovers = getServiceCovers();
   const workHalf = Math.ceil(recentWork.length / 2);
   const workRowA = recentWork.slice(0, workHalf);
   const workRowB = recentWork.slice(workHalf);
@@ -71,7 +72,9 @@ export default function Home() {
     index: serviceIndex[slug],
     title: tServices(`items.${slug}.title`),
     summary: tServices(`items.${slug}.summary`),
-    photo: servicePhotos[slug],
+    /* Every service stays listed even before it has published work, so the
+       newest project overall stands in when a category has no cover yet. */
+    photo: serviceCovers[slug] ?? recentWork[0]?.photo ?? "",
   }));
 
   /* Split by index rather than hardcoding positions, so adding or removing a
@@ -80,14 +83,14 @@ export default function Home() {
   const rightColumn = serviceCards.filter((_, i) => i % 2 === 1);
   return (
     <>
-      <Hero />
+      <Hero photos={recentWork.map((project) => project.photo)} />
 
       {/* About */}
       <section className="bg-white py-16 md:py-24">
         <div className="shell mb-16 grid items-stretch gap-12 md:grid-cols-2 md:gap-16">
           <Reveal className="min-h-[280px]">
             <Photo
-              src="/photos/work.jpg"
+              src={recentWork[0]?.photo ?? ""}
               alt={t("aboutLead")}
               ratio="h-full"
               sizes="(min-width: 768px) 50vw, 100vw"

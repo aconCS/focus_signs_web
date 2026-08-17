@@ -1,0 +1,13 @@
+{
+  "title": "Veranta",
+  "client": "Veranta",
+  "service": "signage",
+  "industry": "restaurants",
+  "date": "2026-02-06",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/veranta/01.jpg",
+    "/photos/portfolio/signage/veranta/02.jpg",
+    "/photos/portfolio/signage/veranta/03.jpg"
+  ]
+}

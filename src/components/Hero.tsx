@@ -7,13 +7,10 @@ import gsap from "gsap";
 import { IrisBlades } from "./IrisMark";
 import { HeroSlideshow } from "./HeroSlideshow";
 import { Link } from "@/i18n/navigation";
-import { portfolioProjects } from "@/lib/portfolio";
 
-/* Same source as the portfolio gallery, so the hero always shows current work
-   without a second list to keep in sync. */
-const heroPhotos = portfolioProjects.map((project) => project.photo);
-
-export function Hero() {
+/* Photos come from the portfolio content, passed in by the page so this stays
+   a client component without reaching into the filesystem. */
+export function Hero({ photos }: { photos: string[] }) {
   const root = useRef<HTMLDivElement>(null);
   const t = useTranslations("Home");
 
@@ -63,7 +60,7 @@ export function Hero() {
          sticky nav so the nav floats over the photos at the top of the page. */
       className="relative -mt-[4.5rem] flex min-h-[80svh] w-full items-center overflow-hidden bg-indigo text-white"
     >
-      <HeroSlideshow photos={heroPhotos} />
+      <HeroSlideshow photos={photos} />
 
       <div
         aria-hidden="true"

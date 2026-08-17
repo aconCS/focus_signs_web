@@ -4,7 +4,8 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/Reveal";
 import { Photo } from "@/components/Photo";
-import { serviceSlugs, serviceIndex, servicePhotos } from "@/lib/content";
+import { serviceSlugs, serviceIndex } from "@/lib/content";
+import { getServiceCovers } from "@/lib/portfolio.server";
 import { industrySlugs, industryServices } from "@/lib/industries";
 
 export async function generateMetadata({
@@ -20,6 +21,7 @@ export async function generateMetadata({
 export default function ServicesPage() {
   const t = useTranslations("Services");
   const tIndustries = useTranslations("Industries");
+  const serviceCovers = getServiceCovers();
 
   return (
     <>
@@ -92,7 +94,7 @@ export default function ServicesPage() {
                   </div>
                 </div>
                 <Photo
-                  src={servicePhotos[slug]}
+                  src={serviceCovers[slug] ?? ""}
                   alt={t("imageBrief", { service: title.toLowerCase() })}
                   ratio="aspect-[5/4]"
                   sizes="(min-width: 1024px) 33vw, 100vw"

@@ -1,0 +1,13 @@
+{
+  "title": "Ladore",
+  "client": "Ladore",
+  "service": "signage",
+  "industry": "retail",
+  "date": "2026-04-28",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/ladore/01.jpg",
+    "/photos/portfolio/signage/ladore/02.jpg",
+    "/photos/portfolio/signage/ladore/03.jpg"
+  ]
+}

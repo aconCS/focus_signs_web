@@ -1,0 +1,15 @@
+{
+  "title": "Calzature",
+  "client": "Calzature",
+  "service": "signage",
+  "industry": "retail",
+  "date": "2026-06-21",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/calzature/01.jpg",
+    "/photos/portfolio/signage/calzature/02.jpg",
+    "/photos/portfolio/signage/calzature/03.jpg",
+    "/photos/portfolio/signage/calzature/04.jpg",
+    "/photos/portfolio/signage/calzature/05.jpg"
+  ]
+}

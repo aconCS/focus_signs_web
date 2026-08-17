@@ -1,0 +1,17 @@
+{
+  "title": "Waterpark Bus",
+  "client": "Waterpark Bus",
+  "service": "vehicle-graphics",
+  "industry": "leisure",
+  "date": "2026-01-13",
+  "ratio": "landscape",
+  "photos": [
+    "/photos/portfolio/vehicle-graphics/waterpark-bus/01.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-bus/02.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-bus/03.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-bus/04.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-bus/05.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-bus/06.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-bus/07.jpg"
+  ]
+}

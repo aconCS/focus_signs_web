@@ -1,0 +1,12 @@
+{
+  "title": "Bloom",
+  "client": "Bloom",
+  "service": "signage",
+  "industry": "retail",
+  "date": "2026-06-30",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/bloom/01.jpg",
+    "/photos/portfolio/signage/bloom/02.jpg"
+  ]
+}

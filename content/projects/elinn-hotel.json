@@ -1,0 +1,14 @@
+{
+  "title": "Elinn Hotel",
+  "client": "Elinn Hotel",
+  "service": "signage",
+  "industry": "hospitality",
+  "date": "2026-05-31",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/elinn-hotel/01.jpg",
+    "/photos/portfolio/signage/elinn-hotel/02.jpg",
+    "/photos/portfolio/signage/elinn-hotel/03.jpg",
+    "/photos/portfolio/signage/elinn-hotel/04.jpg"
+  ]
+}

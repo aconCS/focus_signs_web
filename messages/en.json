@@ -340,7 +340,22 @@
     "ctaTitle": "Want something like this for your business?",
     "ctaBody": "Tell us what you're planning and we'll quote it properly.",
     "ctaButton": "Request a Quote",
-    "close": "Close"
+    "close": "Close",
+    "byService": "By service",
+    "byIndustry": "By industry",
+    "searchPlaceholder": "Search by client or project",
+    "resultCount": "{count, plural, =0 {No projects} one {# project} other {# projects}}",
+    "industries": {
+      "retail": "Retail",
+      "hospitality": "Hospitality",
+      "restaurants": "Restaurants",
+      "corporate": "Corporate",
+      "healthcare": "Healthcare",
+      "automotive": "Automotive",
+      "property": "Property",
+      "education": "Education",
+      "leisure": "Leisure"
+    }
   },
   "Industries": {
     "hubKicker": "Industries",

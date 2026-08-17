@@ -1,41 +1,18 @@
-"use client";
-
-import { useMemo, useState } from "react";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { Reveal, RevealGroup } from "@/components/Reveal";
-import { Photo } from "@/components/Photo";
-import { PortfolioLightbox } from "@/components/PortfolioLightbox";
-import { serviceSlugs, serviceIndex, type ServiceSlug } from "@/lib/content";
-import { portfolioProjects, ratioClass } from "@/lib/portfolio";
-
-function titleFromSlug(slug: string) {
-  return slug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-}
+import { Reveal } from "@/components/Reveal";
+import { PortfolioGrid } from "@/components/PortfolioGrid";
+import { getPortfolioProjects } from "@/lib/portfolio.server";
 
 export default function PortfolioPage() {
   const t = useTranslations("Portfolio");
-  const tServices = useTranslations("Services");
-  const locale = useLocale();
-  const [active, setActive] = useState<ServiceSlug | "All">("All");
-
-  const dateFormatter = useMemo(
-    () => new Intl.DateTimeFormat(locale, { year: "numeric", month: "long" }),
-    [locale]
-  );
-
-  const filtered =
-    active === "All"
-      ? portfolioProjects
-      : portfolioProjects.filter((p) => p.service === active);
+  // Read on the server; the grid only needs the data to filter client-side.
+  const projects = getPortfolioProjects();
 
   return (
     <>
       <section className="bg-indigo text-white">
-        <div className="mx-auto max-w-[1400px] px-6 py-20 lg:px-10 lg:py-28">
+        <div className="shell py-20 lg:py-28">
           <p className="text-xs font-semibold tracking-[0.2em] text-acid uppercase">
             {t("kicker")}
           </p>
@@ -46,75 +23,11 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 py-20 lg:px-10 lg:py-28">
-        <div className="flex flex-wrap gap-2">
-          <button
-            type="button"
-            onClick={() => setActive("All")}
-            className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
-              active === "All"
-                ? "border-ink bg-indigo text-white"
-                : "border-ink/10 text-ink/65 hover:border-ink hover:text-ink"
-            }`}
-          >
-            {t("filterAll")}
-          </button>
-          {serviceSlugs.map((slug) => (
-            <button
-              key={slug}
-              type="button"
-              onClick={() => setActive(slug)}
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition-colors ${
-                active === slug
-                  ? "border-ink bg-indigo text-white"
-                  : "border-ink/10 text-ink/65 hover:border-ink hover:text-ink"
-              }`}
-            >
-              {tServices(`items.${slug}.title`)}
-            </button>
-          ))}
-        </div>
-
-        {filtered.length === 0 ? (
-          <p className="mt-16 text-center text-ink/65">{t("emptyFilter")}</p>
-        ) : (
-          <RevealGroup className="mt-10 columns-1 gap-8 sm:columns-2 lg:columns-3">
-            {filtered.map((project) => {
-              const category = tServices(`items.${project.service}.title`);
-              const title = titleFromSlug(project.slug);
-              return (
-                <div key={project.slug} className="mb-8 break-inside-avoid">
-                  <div className="relative">
-                    <Photo
-                      src={project.photo}
-                      alt={t("imageBrief", { category })}
-                      ratio={ratioClass[project.ratio]}
-                    />
-                    <PortfolioLightbox
-                      photos={project.photos}
-                      title={title}
-                      closeLabel={t("close")}
-                    />
-                  </div>
-                  <div className="mt-4 flex items-baseline gap-3">
-                    <span className="font-display text-sm font-semibold text-ink/65">
-                      {serviceIndex[project.service]}
-                    </span>
-                    <div>
-                      <h3 className="font-display text-lg font-medium text-ink">{title}</h3>
-                      <p className="text-sm text-ink/65">
-                        {category} · {dateFormatter.format(new Date(project.date))}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </RevealGroup>
-        )}
+      <section className="shell py-20 lg:py-28">
+        <PortfolioGrid projects={projects} />
       </section>
 
-      <section className="mx-auto max-w-[1400px] px-6 pb-24 lg:px-10 lg:pb-32">
+      <section className="shell pb-24 lg:pb-32">
         <Reveal className="flex flex-col items-start gap-6 rounded-3xl bg-indigo px-8 py-14 text-white sm:flex-row sm:items-center sm:justify-between sm:px-16">
           <div>
             <h2 className="max-w-md font-display text-3xl font-semibold tracking-tight sm:text-4xl">

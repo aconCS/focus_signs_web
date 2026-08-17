@@ -1,0 +1,20 @@
+{
+  "title": "Right Care Clinic",
+  "client": "Right Care Clinic",
+  "service": "signage",
+  "industry": "healthcare",
+  "date": "2026-03-05",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/right-care-clinic/01.jpg",
+    "/photos/portfolio/signage/right-care-clinic/02.jpg",
+    "/photos/portfolio/signage/right-care-clinic/03.jpg",
+    "/photos/portfolio/signage/right-care-clinic/04.jpg",
+    "/photos/portfolio/signage/right-care-clinic/05.jpg",
+    "/photos/portfolio/signage/right-care-clinic/06.jpg",
+    "/photos/portfolio/signage/right-care-clinic/07.jpg",
+    "/photos/portfolio/signage/right-care-clinic/08.jpg",
+    "/photos/portfolio/signage/right-care-clinic/09.jpg",
+    "/photos/portfolio/signage/right-care-clinic/10.jpg"
+  ]
+}

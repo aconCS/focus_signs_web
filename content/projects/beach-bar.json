@@ -1,0 +1,13 @@
+{
+  "title": "Beach Bar",
+  "client": "Beach Bar",
+  "service": "signage",
+  "industry": "hospitality",
+  "date": "2026-07-06",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/beach-bar/01.jpg",
+    "/photos/portfolio/signage/beach-bar/02.jpg",
+    "/photos/portfolio/signage/beach-bar/03.jpg"
+  ]
+}

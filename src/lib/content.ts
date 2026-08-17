@@ -34,19 +34,8 @@ export const serviceIndex: Record<ServiceSlug, string> = {
   "maintenance-repair": "07",
 };
 
-/**
- * Explicit rather than derived from the portfolio, so every category has an
- * image even when no project has been published under it yet.
- */
-export const servicePhotos: Record<ServiceSlug, string> = {
-  signage: "/photos/papantoniou-led.jpg",
-  "vehicle-graphics": "/photos/van.jpg",
-  "print-vinyl": "/photos/pouttogiros.jpg",
-  "engraving-cutting": "/photos/work.jpg",
-  "building-cladding": "/photos/anemi.jpg",
-  "promotional-events": "/photos/bus.jpg",
-  "maintenance-repair": "/photos/cafeme-led.jpg",
-};
+/* Service cover images are derived from published work — see
+   `getServiceCovers()` in lib/portfolio.ts. */
 
 export const companyInfo = {
   name: "Focus Signs",

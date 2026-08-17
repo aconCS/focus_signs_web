@@ -1,0 +1,13 @@
+{
+  "title": "Kissos Flower",
+  "client": "Kissos Flower",
+  "service": "signage",
+  "industry": "retail",
+  "date": "2026-05-01",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/kissos-flower/01.jpg",
+    "/photos/portfolio/signage/kissos-flower/02.jpg",
+    "/photos/portfolio/signage/kissos-flower/03.jpg"
+  ]
+}

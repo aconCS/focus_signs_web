@@ -9,9 +9,9 @@ import { serviceIndex } from "@/lib/content";
 import {
   industrySlugs,
   industryServices,
-  industryPhotos,
   type IndustrySlug,
 } from "@/lib/industries";
+import { getIndustryCovers } from "@/lib/portfolio.server";
 import { routing } from "@/i18n/routing";
 
 export function generateStaticParams() {
@@ -82,7 +82,7 @@ function IndustryContent({ slug }: { slug: IndustrySlug }) {
             </p>
           </div>
           <Photo
-            src={industryPhotos[slug]}
+            src={getIndustryCovers()[slug] ?? ""}
             alt={t(`items.${slug}.title`)}
             ratio="aspect-[4/5]"
           />

@@ -1,0 +1,13 @@
+{
+  "title": "Speech Care",
+  "client": "Speech Care",
+  "service": "signage",
+  "industry": "healthcare",
+  "date": "2026-02-15",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/signage/speech-care/01.jpg",
+    "/photos/portfolio/signage/speech-care/02.jpg",
+    "/photos/portfolio/signage/speech-care/03.jpg"
+  ]
+}

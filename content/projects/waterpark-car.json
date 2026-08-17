@@ -1,0 +1,14 @@
+{
+  "title": "Waterpark Car",
+  "client": "Waterpark Car",
+  "service": "vehicle-graphics",
+  "industry": "leisure",
+  "date": "2026-01-10",
+  "ratio": "portrait",
+  "photos": [
+    "/photos/portfolio/vehicle-graphics/waterpark-car/01.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-car/02.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-car/03.jpg",
+    "/photos/portfolio/vehicle-graphics/waterpark-car/04.jpg"
+  ]
+}

@@ -18,10 +18,5 @@ export const industryServices: Record<IndustrySlug, ServiceSlug[]> = {
   healthcare: ["signage", "engraving-cutting", "print-vinyl"],
 };
 
-export const industryPhotos: Record<IndustrySlug, string> = {
-  retail: "/photos/papantoniou-led.jpg",
-  hospitality: "/photos/cafeme-led.jpg",
-  restaurants: "/photos/pouttogiros.jpg",
-  corporate: "/photos/andria.jpg",
-  healthcare: "/photos/fiesta.jpg",
-};
+/* Industry cover images are derived from published work — see
+   `getIndustryCovers()` in lib/portfolio.ts. */

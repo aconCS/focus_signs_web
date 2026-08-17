@@ -4,7 +4,8 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { RevealGroup } from "@/components/Reveal";
 import { Photo } from "@/components/Photo";
-import { industrySlugs, industryPhotos } from "@/lib/industries";
+import { industrySlugs } from "@/lib/industries";
+import { getIndustryCovers } from "@/lib/portfolio.server";
 
 export async function generateMetadata({
   params,
@@ -18,6 +19,7 @@ export async function generateMetadata({
 
 export default function IndustriesPage() {
   const t = useTranslations("Industries");
+  const industryCovers = getIndustryCovers();
 
   return (
     <>
@@ -41,7 +43,7 @@ export default function IndustriesPage() {
             return (
               <Link key={slug} href={`/industries/${slug}`} className="group block">
                 <Photo
-                  src={industryPhotos[slug]}
+                  src={industryCovers[slug] ?? ""}
                   alt={tagline}
                   ratio="aspect-[4/3]"
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"

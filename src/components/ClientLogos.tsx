@@ -10,10 +10,11 @@ const logos = [
   { file: "kfc.png", name: "KFC" },
   { file: "papantoniou.png", name: "Papantoniou" },
   { file: "aristo.png", name: "Aristo" },
-  { file: "crocs.png", name: "Crocs" },
+  { file: "crocs.svg", name: "Crocs" },
   { file: "taco.png", name: "Taco Bell" },
-  { file: "eu-foods.jpg", name: "EU Foods" },
-  { file: "cafe.jpg", name: "Cafe Me" },
+  { file: "eu-foods.svg", name: "EU Foods" },
+  { file: "cafe-nero.svg", name: "Caffè Nero" },
+  { file: "keo.png", name: "KEO" },
 ] as const;
 
 export function ClientLogos({ heading }: { heading?: string }) {
