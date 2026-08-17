@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
     <title>Focus Signs — Content Admin</title>
+    <!-- Explicit rather than left to relative-URL resolution: served at bare
+         /admin (no trailing slash), a relative "config.yml" fetch resolves
+         against the browser's address bar and lands on /config.yml, not
+         /admin/config.yml. -->
+    <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
   </head>
   <body>
     <script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
