@@ -1,0 +1,85 @@
+# Decap CMS schema for the portfolio.
+#
+# Content is still content/projects/*.json — same files the site reads and
+# the sync script writes. Editing here commits straight to GitHub, which
+# redeploys the site. There is no database and no separate media host.
+
+backend:
+  name: github
+  repo: aconCS/focus_signs_web
+  branch: master
+  # Must match the domain the CMS is served from — GitHub only redirects back
+  # to the callback URL registered on the OAuth app, so this has to be exact.
+  base_url: https://REPLACE-WITH-YOUR-DOMAIN
+  auth_endpoint: api/auth
+
+# Fallback only — the photos field below overrides this per project so new
+# uploads land in their own folder rather than one shared bucket.
+media_folder: "public/photos/portfolio"
+public_folder: "/photos/portfolio"
+
+collections:
+  - name: "project"
+    label: "Portfolio Projects"
+    folder: "content/projects"
+    create: true
+    delete: true
+    format: json
+    identifier_field: title
+    summary: "{{title}} — {{service}}"
+    fields:
+      - { label: "Project title", name: "title", widget: "string" }
+      - { label: "Client name", name: "client", widget: "string", required: false }
+      - label: "Service"
+        name: "service"
+        widget: "select"
+        options:
+          - { label: "Signage", value: "signage" }
+          - { label: "Vehicle graphics", value: "vehicle-graphics" }
+          - { label: "Print & vinyl", value: "print-vinyl" }
+          - { label: "Engraving & cutting", value: "engraving-cutting" }
+          - { label: "Building cladding", value: "building-cladding" }
+          - { label: "Promotional & events", value: "promotional-events" }
+          - { label: "Maintenance & repair", value: "maintenance-repair" }
+      - label: "Industry"
+        name: "industry"
+        widget: "select"
+        options:
+          - { label: "Retail", value: "retail" }
+          - { label: "Hospitality", value: "hospitality" }
+          - { label: "Restaurants", value: "restaurants" }
+          - { label: "Corporate", value: "corporate" }
+          - { label: "Healthcare", value: "healthcare" }
+          - { label: "Automotive", value: "automotive" }
+          - { label: "Property", value: "property" }
+          - { label: "Education", value: "education" }
+          - { label: "Leisure", value: "leisure" }
+      - label: "Completed"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        required: false
+      - label: "Short description"
+        name: "summary"
+        widget: "text"
+        required: false
+      - label: "Card shape"
+        name: "ratio"
+        widget: "select"
+        default: "square"
+        options:
+          - { label: "Tall", value: "portrait" }
+          - { label: "Square", value: "square" }
+          - { label: "Wide", value: "landscape" }
+      - label: "Photos"
+        name: "photos"
+        widget: "list"
+        summary: "{{fields.image}}"
+        field:
+          label: "Photo"
+          name: "image"
+          widget: "image"
+          media_folder: "/public/photos/portfolio/{{slug}}"
+          public_folder: "/photos/portfolio/{{slug}}"

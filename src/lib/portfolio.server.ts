@@ -5,7 +5,8 @@ import type { ServiceSlug } from "./content";
 import type { PortfolioIndustry, PortfolioProject } from "./portfolio";
 
 /**
- * Reads the portfolio out of `content/projects/*.json`, which TinaCMS writes.
+ * Reads the portfolio out of `content/projects/*.json`, which Decap CMS
+ * writes (see public/admin/config.yml).
  *
  * Server-only — importing this from a client component pulls `node:fs` into the
  * browser bundle and fails the build. Client components take the data as props
@@ -16,6 +17,24 @@ const contentDir = path.join(process.cwd(), "content", "projects");
 
 function isRatio(value: unknown): value is PortfolioProject["ratio"] {
   return value === "portrait" || value === "square" || value === "landscape";
+}
+
+/**
+ * Decap's image-list widget stores each entry as `{ image: "path" }`, while
+ * the sync script and hand-written entries use plain strings. Both are valid
+ * on disk, so normalize here rather than picking one and breaking the other.
+ */
+function normalizePhotos(value: unknown): string[] {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((entry) =>
+      typeof entry === "string"
+        ? entry
+        : typeof entry === "object" && entry && "image" in entry
+          ? String((entry as { image?: unknown }).image ?? "")
+          : ""
+    )
+    .filter(Boolean);
 }
 
 /**
@@ -39,7 +58,7 @@ export const getPortfolioProjects = cache((): PortfolioProject[] => {
       fs.readFileSync(path.join(contentDir, file), "utf8")
     ) as Partial<PortfolioProject>;
 
-    const photos = (raw.photos ?? []).filter(Boolean);
+    const photos = normalizePhotos(raw.photos);
     if (photos.length === 0 || !raw.service) continue;
 
     projects.push({
